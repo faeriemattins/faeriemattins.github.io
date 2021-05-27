@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/js/mdb.min.js"></script>
+
+
+
+<style type="text/css">
+        /* Required for full background image */
+
+                        html,
+                        body,
+                        header,
+                        #intro-section {
+                                height: 100%;
+                                position:relative;
+                        }
+
+                        @media (max-width: 740px) {
+                                html,
+                                body,
+                                header,
+                                #intro-section {
+                                        height: 100vh;
+                                }
+                        }
+                        .bg{
+                            background-image: url("https://www.technocrazed.com/wp-content/uploads/2015/12/Brick-wallaper-For-Background-30.jpg") ;
+                            height: 100%;
+                             background-position: center;
+                             background-repeat: no-repeat;
+                             background-size: cover;
+
+                        }
+
+
+    .navbar_collapse{
+        background-color:brown;
+        min-height:32px !important;
+    }
+
+    .navbar{
+        height:50px !important;
+    }
+    .navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important; height:30px;}
+
+    .navbar:not(.navbar_collapse) {
+                background:#c7204c  !important;
+            }
+     @media (max-width: 991px) {
+                .navbar:not(.navbar_collapse) {
+                    background: #c7204c !important;
+                }
+            }
+               .rgba-gradient {
+                background: rgba(35, 7, 77, 0.6);
+                /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));
+                /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, rgba(204, 83, 51, 0.6), rgba(35, 7, 77, 0.6));
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+
+
+            .img-gradient:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(220, 66, 37, 0.5)), color-stop(100%, rgba(0, 47, 75, 0.5)));
+                /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                /* Opera 11.10+ */
+                /* IE10+ */
+                background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 47, 75, 0.5)), to(rgba(220, 66, 37, 0.5)));
+                background: linear-gradient(to bottom, rgba(0, 47, 75, 0.5) 0%, rgba(220, 66, 37, 0.5) 100%);
+                /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000', GradientType=0);
+                /* IE6-9 */
+            }
+
+            img{ max-width:100%;}
+            .fab {
+
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+
+  border-radius: 25%;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.page-footer {
+
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:#c7204c ;
+   color: white;
+   text-align: left;
+}
+
+.gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
+.gallery_box{ padding:0;display: flow-root;}
+
+.gallery_box li:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.gallery_box li img{-webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;}
+.gallery_box li:nth-child(even) {
+    height: 304px;
+}
+.gallery_box li:nth-child(odd) {
+    height: 438px;
+}
+.gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
+.gallery_box li:nth-child(even) .box_data{ background:rgba(0,44,255,0.27) }
+.gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
+.gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
+.gallery_box li:hover .box_data{ background:rgba(255,0,39,0.55)}
+</style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-light scrolling-navbar" >
+                <div class="container fluid">
+
+                    <a class="navbar-brand" href="#" style=color:yellow>Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link yellow-text" href="#home" data-offset="90">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link yellow-text" href="#about" data-offset="90">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link yellow-text" href="#projects" data-offset="90">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link yellow-text" href="#resume" data-offset="90">Resume</a>
+                        </li>
+                       <li class="nav-item">
+                           <a class="nav-link yellow-text" href="#contact" data-offset="90">Contact</a>
+                       </li>
+                    </ul>
+                    <div class="navbar-icon ">
+                        <ul>
+                        <li>...</li>
+                        <li>...</li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com/profile.php?id=100008131954641" target="_blank">
+                                <i class="fab fa-facebook light-green-text-2"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/faerie_mattins/" target="_blank">
+                                <i class="fab fa-instagram light-green-text-2"></i>
+                            </a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+   </nav>
+<main>
+    <section id="home">
+        <div class="view" id="intro-section">
+        <div class="bg" id="intro-section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-md-4 my-5">
+                    <div class="rgba-gradient d-flex justify-content-center align-items-center ">
+
+                    <img class="img-fluid" src="me!.jpeg" alt="image not loaded" width="200" height="600" />
+
+                    </div>
+                </div>
+                <div class="col-sm-9 col-md-8 mt-5">
+                     <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+                          <div class="container px-md-4 px-sm-0">
+                              <div class="row wow fadeIn" >
+                                  <div class="col-md-12 mb-40 text-white text-center wow fadeIn">
+                   <h3 class="display-3 font-weight-bold text-white mb-0 pt-md-4 pt-4">Faerie Mattins R</h3>
+                    <hr class="hr-light my-3 black-75">
+                    <h4 class="subtext-header mt-2 mb-4">Hello everyone! Welcome to my personal website.To be simple, i love coding and i would love to show you my journey. I hope you would enjoy it.</h4>
+                </div>
+                              </div>
+                     </div>
+                     </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+</main>
+<main>
+      <section class="py-5" id="about">
+
+          <div class="container">
+              <h2 class="h1-responsive text-dark text-center font-weight-bold m5" >About Me</h2>
+              <div class="row">
+                  <div class="col-sm-6 col-md-6 text-left py-3">
+                  <p class="grey-text">Hi, this is Faerie here. I’m currently studying B.Tech Computer science in VIT, Chennai. I did my schooling in Chennai Public School, Thirumazhisai. I chose computer science because I have a passion for coding and web development. I currently know the following languages: Python, C, C++, MySQL, HTML, RStudio. I am committed to learning and self-development so that I can consistently achieve better results. I have completed two courses in coursera which includes data science with math and python for beginners. I’m also doing a few courses currently which include Introduction to IoT devices. I recently did a project on social network data analysis. I also participated in a few hackatons conducted in my college. I was the school topper in a quiz competition conducted by Times of India which was based on aptitude. When I’m not on the computer, I enjoy playing with my dog, practicing karate(currently a black belt holder), drawing, playing keyboard and also singing. I also love to watch anime and Netflix.</p>
+                  </div>
+                  <div class="col-sm-6 col-md-6 py-3">
+                      <img class="img-thumbnail" src="../Pictures/me2.jpeg" width="500" height="600" alt="image not loaded">
+
+                  </div>
+              </div>
+          </div>
+      </section>
+
+  </main>
+
+   <main>
+      <section class="text-center py-5" id="projects" style="background-color:#eee;">
+          <div class="container">
+          <h2 class="h1-responsive font-weight-bold mb-2">My Projects</h2>
+          <p class="w-responsive mb-5 mx-auto ">Here are some of my projects.</p>
+          <div class="row">
+              <div class="col-sm-4 col-md-4 mb-4">
+                  <div class="view overlay rounded z-depth-2">
+                      <img src="../Pictures/Screenshots/Screenshot (17).png" alt="image not loaded" width="400" height="300" />
+                      <a>
+                          <div class="mask rgba-white-slight"></div>
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <h4 class="font-weight-bold my-3">Social network data analysis</h4>
+                      <p class="grey-text">Social networking has become a vital part in marketing.This project throws light on how social network data affects its users.The objective of this project is to see how different sporting brands use social media to market it's product and it's reach to their costumers. </p>
+                      <a href="Final Project Review dbms.pptx" class="btn btn-blue btn-sm"><i class="fa fa-clone left"></i>View project</a>
+                  </div>
+              </div>
+
+
+
+              <div class="col-sm-4 col-md-4 mb-4">
+                  <div class="view overlay rounded z-depth-2">
+                      <img src="https://i.pinimg.com/originals/7b/41/f7/7b41f7ae3ac370c966f3931ed4ab991c.jpg" alt="image not loaded" width="400" height="300" />
+                      <a>
+                          <div class="mask rgba-white-slight"></div>
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <h4 class="font-weight-bold my-3">Project 2</h4>
+                      <p class="grey-text">Coming soon... </p>
+                      <a href="#" class="btn btn-blue btn-sm"><i class="fa fa-clone left"></i>View project</a>
+                  </div>
+              </div>
+
+
+
+              <div class="col-sm-4 col-md-4 mb-4">
+                  <div class="view overlay rounded z-depth-2">
+                      <img src="https://images-na.ssl-images-amazon.com/images/I/61uMvoCHNDL._SL1000_.jpg" alt="image not loaded" width="400" height="300" />
+                      <a>
+                          <div class="mask rgba-white-slight"></div>
+                      </a>
+                  </div>
+                  <div class="card-body">
+                      <h4 class="font-weight-bold my-3">Project 3</h4>
+                      <p class="grey-text">Coming soon... </p>
+                      <a href="#" class="btn btn-blue btn-sm"><i class="fa fa-clone left"></i>View project</a>
+                  </div>
+              </div>
+
+          </div>
+
+          </div>
+      </section>
+
+  </main>
+
+
+
+  <main>
+      <section class="py-5 text-center" id="resume">
+          <div class="container">
+              <h2 class="font-weight-bold h1-responsive mb-2">My Resume</h2>
+              <img class="image-fluid" src="https://thumbs.dreamstime.com/b/cartoon-resume-20947453.jpg" width="200" height="200" target="_blank" alt="image not loaded" />
+              <a href="#" class="btn btn-sm btn-purple">CLick here to grab a copy of my resume.</a>
+          </div>
+      </section>
+
+  </main>
+  <footer class="page-footer font-md pt-4" id="contact">
+      <div class="container">
+          <p class="text-center">Contact details:<br>Email: faeriemattins73191817@gmail.com<br>Student email ID:faeriemattins.r2019@vitstudent.ac.in<br></p>
+      </div>
+  </footer>
+
+
+</body>
+
+</html>
